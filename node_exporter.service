@@ -1,0 +1,10 @@
+[Unit]
+Description=Prometheus Server
+Documentation=https://prometheus.io/docs/introduction/overview/
+After-network-omline.target
+[Service]
+User=root
+Restart=on-failure
+ExecStart=/home/ubuntu/node_exporter-1.2.2.linux-amd64/node_exporter
+[Install]
+WantedBy=multi-user.target
