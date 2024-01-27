@@ -1,7 +1,7 @@
 [Unit]
 Description=Prometheus Server
 Documentation=https://prometheus.io/docs/introduction/overview/
-After-network-omline.target
+After=network-online.target
 [Service]
 User=root
 Restart=on-failure
