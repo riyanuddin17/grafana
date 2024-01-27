@@ -5,6 +5,6 @@ After=network-online.target
 [Service]
 User=root
 Restart=on-failure
-ExecStart=/home/ubuntu/node_exporter-1.2.2.linux-amd64/node_exporter
+ExecStart=/home/ubuntu/node_exporter-1.7.0.linux-amd64/node_exporter
 [Install]
 WantedBy=multi-user.target
